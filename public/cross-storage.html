@@ -1,0 +1,17 @@
+<!doctype html>
+
+<head>
+    <title>Cross Storage Hub</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="./hub.js"></script>
+    <script>
+        // /.*localhost:420\d$/
+        CrossStorageHub.init([
+            { origin: /.*/, allow: ['get', 'set'] }
+        ]);
+    </script>
+</body>
+
+</html>
