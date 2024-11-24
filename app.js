@@ -5,10 +5,6 @@ const port = 3003;
 
 app.use(bodyParser.json())
 app.use(express.static('public'))
-app.get('/', (req, res) => {
-    res.json("hello")
-})
-
 app.post('/register', (request, response) => {
     // response.send('Hello akaki!')
     let result = request.body;
